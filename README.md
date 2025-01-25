@@ -46,6 +46,7 @@ Para ver la carpeta con todos los cambios de git puedes usar el siguiente comand
 ```sh
 > ls -a
 ```
+
 Para crear un archivo de texto desde terminal editable en terminal:
 ```sh
 > nano testing.txt
@@ -80,7 +81,9 @@ git reset --mixed
 git reset --hard
 ```
 
-
-
-
 (https://education.github.com/git-cheat-sheet-education.pdf)[CheatSheet]
+
+Para ver los cambios que has hecho:
+```sh
+> git log
+```
