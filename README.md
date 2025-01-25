@@ -42,4 +42,45 @@ Para ver la configuracion:
 > - git config --list
 ```
 
+Para ver la carpeta con todos los cambios de git puedes usar el siguiente comando desde el root:
+```sh
+> ls -a
+```
+Para crear un archivo de texto desde terminal editable en terminal:
+```sh
+> nano testing.txt
+```
+
+Para guardar, confirmar guardar y salir:
+```sh
+CTRL X
+y
+ENTER
+```
+
+Comandos adicionales de terminal y de GIT:
+```sh
+# Directorio de Trabajo
+cp
+mv
+touch
+create
+ramadelete
+
+# Area de Staging
+git add <file>
+git rm --cached <file> # para sacarlo de staging
+git rm --force <file>
+
+# Repositorio Git
+git commit
+git commit -ammend
+git reset --soft
+git reset --mixed
+git reset --hard
+```
+
+
+
+
 (https://education.github.com/git-cheat-sheet-education.pdf)[CheatSheet]
