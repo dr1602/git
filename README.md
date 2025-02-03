@@ -118,3 +118,19 @@ Para cerrar el archivo
 > ctr + x
 ```
 
+## Ramas
+
+Un nuevo metodo para cambiar de rama es:
+```sh
+> git switch ***
+```
+
+Ejemplo:
+```sh
+> git switch main
+```
+
+Para hacer merge de las ramas o fucionarlas:
+```sh
+> git marge daves
+```
