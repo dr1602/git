@@ -134,3 +134,20 @@ Para hacer merge de las ramas o fucionarlas:
 ```sh
 > git marge daves
 ```
+
+para ver el historial de los archivos creados, modificados, etc.
+```sh
+> git log
+```
+
+para cerrar un git log, usar:
+```sh
+> q
+```
+
+ya que se unifico la rama individual con la secundaria, ya no se necesita tener la rama secundaria por lo que se requiere eliminar. asi evitamos tener ramas duplicados o evitar problemas
+
+Para eliminar:
+```sh
+> git branch -D dave
+```
