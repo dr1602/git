@@ -87,3 +87,34 @@ Para ver los cambios que has hecho:
 ```sh
 > git log
 ```
+
+## Ramas
+
+Para ver las ramas y en que rama te encuentras
+```sh
+> git branch
+```
+
+Para crear una nueva rama y cambiarte hacia dicha rama
+```sh
+> git branch
+```
+
+Para crear una archivo y poderlo editar desde Nano
+```sh
+> nano testingdave.txt
+```
+
+### Archivo con Nano
+
+Para guardar un archivo con arbol
+```sh
+> ctr + o
+> enter
+```
+
+Para cerrar el archivo
+```sh
+> ctr + x
+```
+
