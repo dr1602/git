@@ -118,7 +118,7 @@ Para cerrar el archivo
 > ctr + x
 ```
 
-## Ramas
+### De vuelta a las ramas
 
 Un nuevo metodo para cambiar de rama es:
 ```sh
@@ -150,4 +150,41 @@ ya que se unifico la rama individual con la secundaria, ya no se necesita tener 
 Para eliminar:
 ```sh
 > git branch -D dave
+```
+
+## Git Reset y Git Revert
+
+**git reset**: te devuelve a un commit anterior, eliminando los cambios en el historial como si nunca hubieran ocurrido. Explorar el historial de commits, también sirve para recordar que se estuvo haciendo en cada uno de los commits. Ver los punteros y regresar al útlimo commit
+
+**git revert**: crea un nuevo commit que "revierte" los cambios realizados por un commit específico.
+
+1. Para este ejercicio se realiza:
+
+```sh
+> nono error.txt
+> git add .
+> git commit -m 'nuevo archivo especial creado'
+> git log
+```
+y nos fijamos en el identificador:
+
+```sh
+0d2c018c3c65e26e4a19f3dfbc6ff6ccd9db0036
+
+
+commit 0d2c018c3c65e26e4a19f3dfbc6ff6ccd9db0036 (HEAD -> main)
+Author: dr1602 <david.arangelg@gmail.com>
+Date:   Tue Feb 4 21:42:08 2025 -0600
+```
+
+```sh
+git reset 0d2c018c3c65e26e4a19f3dfbc6ff6ccd9db0036 --no-edit
+```
+
+Para git reset existen para volver atrás entre versiones..., y te puede convenir trabajando con tu equipo..
+
+```sh
+git reset --hard
+git reset --mix
+git reset --soft
 ```
