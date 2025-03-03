@@ -272,3 +272,18 @@ y verás que no hay nuevas ramas, ni cambios, es una ram dummy
 ```sh
 > git merge developer
 ```
+*arroja:*
+
+Auto-merging conflict.txt
+CONFLICT (content): Merge conflict in conflict.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+*reedito los cambios en nano, de este caso específico con:*
+```sh
+> git merge developer
+```
+
+*reviso los cambios con*
+```sh
+> git status
+```
