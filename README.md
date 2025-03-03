@@ -188,3 +188,45 @@ git reset --hard
 git reset --mix
 git reset --soft
 ```
+
+## Git tag y git checkout
+
+**git tag**: un tag es como una etiqueta que peudes aplicar a un commit para indetificarlo fácilmente en el futuro.
+
+**git checkout**: cambiar de una rama a un commit específico a otro, también puede servir para comparar ramas, sin que se afecte a la rama principal
+
+### Git tag
+Para asignar un tag mas un mensaje al ultimo commit
+```sh
+> git tag -a v1.0 -m 'Mi primer version'
+```
+
+para buscar o generar una lista de tags
+```sh
+> git tag
+```
+
+para profundizar que dice la version segun el tag
+```sh
+> git show <tag>
+> git show v1.0
+```
+*Ese comando te muestra información como:*
+1. Persona que hace el commit
+2. $$
+3. dato del commit
+4. cambios
+5. mensaje
+6. otros
+
+para borrar un tag sin afectar un commit
+```sh
+> git tag -d <tag>
+> git tag -d v1.0
+```
+**No modifica que el historial de los commits, sólo agrega un nuevo separador**
+
+para revisar un punto en particular sin modificar el trabajo que actualmente estoy haciendo
+```sh
+> git checkout <hash_del_commit>
+```
