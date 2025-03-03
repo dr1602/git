@@ -230,3 +230,30 @@ para revisar un punto en particular sin modificar el trabajo que actualmente est
 ```sh
 > git checkout <hash_del_commit>
 ```
+### Notas desde la consola sobre este comando
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+*para volver a la rama principal*
+```sh
+> git checkout main
+```
+
+*para confirmar que nada sucedió:*
+```sh
+> git log
+> git branch
+```
+
+y verás que no hay nuevas ramas, ni cambios, es una ram dummy
