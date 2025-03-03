@@ -257,3 +257,18 @@ Or undo this operation with:
 ```
 
 y verás que no hay nuevas ramas, ni cambios, es una ram dummy
+
+## [Como resolver conflictos de rama en git](Como resolver conflictos de rama en git)
+
+1. creas un archivo en nano
+2. haces una nueva branch
+3. modificas los cambios en la nueva branch
+4. haces commit de los cambios
+5. regresas a la rama main
+6. haces cambios al mismo archivo de nano desde la rama main
+7. haces commit de esos cambios
+8. procedes a hacer merge con:
+
+```sh
+> git merge developer
+```
